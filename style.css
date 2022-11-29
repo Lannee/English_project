@@ -1,0 +1,267 @@
+body{
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+.head{
+	margin-top: 40px;
+	height: 180px;
+	/*box-shadow: 0px 0px 20px rgb(1,1,1,0.08);*/
+	width: calc(100vw - 80px);
+	z-index: 10;
+	position: fixed;
+	margin-left: 40px;
+	border-radius: 50px;
+
+}
+
+#headBack{
+	transform: 0.5s;
+	top: 40px;
+	position: fixed;
+    width: calc(100vw - 80px);
+    height: 180px;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    margin-left: 40px;
+	border-radius: 50px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255,255,255,0.85);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+#menuButton{
+	height: 76px;
+	width: 76px;
+	margin-top: 52px;
+	margin-right: 52px;
+	float: right;
+}
+
+.content{
+	background-color: #eeeeee;
+	padding-bottom: 40px;
+	float: left;
+}
+
+.logo{
+	height: 66px;
+	margin-top: 57px;
+	margin-left: 60px;
+}
+
+.mainBanner{
+	margin-top: 260px;
+	width: 100vw;
+	height: calc(100vw / 1.4);
+}
+
+.progress{
+	width: calc(100vw - 120px);
+	margin-left: 40px;
+	margin-top: 40px;
+	border-radius: 50px;
+	background-color: white;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+
+.fullProgress{
+	width: calc(100vw - 120px);
+	margin-left: 40px;
+	margin-top: 260px;
+	border-radius: 50px;
+	background-color: white;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+
+.progress p{
+	font-size: 54px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-family: 'Alexandria', sans-serif;
+}
+.fullProgress p{
+	font-size: 54px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-family: 'Alexandria', sans-serif;
+	text-align: center;
+	margin-left: -40px;
+}
+
+.fullHeart{
+	height: 400px;
+	width: 400px;
+	background-image: url(fullHeart.png);
+	background-size: cover;
+	margin-left: calc(50% - 220px);
+}
+
+.progressbar{
+	height: 50px;
+	width: calc((100% - 40px) / 2);
+	background-color: #EE4139;
+	border-radius: 25px 0px 0px 25px;
+	margin-top: -50px;
+}
+
+.progressBack{
+	height: 50px;
+	width: calc(100% - 40px);
+	background-color: #E98985;
+	border-radius: 25px;
+}
+
+.tasks{
+	width: calc(100vw - 40px);
+	background-color: white;
+	padding-top: 40px;
+	padding-left: 40px;
+	float: left;
+}
+
+#date{
+	font-size: 38px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	opacity: 0.8;
+	font-family: 'Alexandria', sans-serif;
+}
+
+.doneDate{
+	font-size: 38px;
+	margin-top: 0px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	opacity: 0.8;
+	font-family: 'Alexandria', sans-serif;
+	float: left;
+}
+
+.moreLine{
+	height: 20px;
+	float: left;
+	margin-left: calc(50% - 160px);
+	margin-bottom: 40px;
+}
+
+.tasks h1{
+	font-size: 54px;
+	margin-top: 0px;
+	margin-bottom: 40px;
+	font-family: 'Alexandria', sans-serif;
+
+}
+
+.task{
+	background-color: #eeeeee;
+	border-radius: 50px;
+	width: calc(100% - 120px);
+	margin-bottom: 40px;
+	padding-top: 60px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 60px;
+	float: left;
+}
+
+.task p{
+	font-size: 46px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: 'Alexandria', sans-serif;
+	float: left;
+	width: calc(100% - 110px);
+	margin-left: 40px;
+	min-height: 70px;
+}
+
+.rate{
+	width: calc(100vw - 120px);
+	margin-left: 40px;
+	margin-top: 40px;
+	border-radius: 50px;
+	background-color: white;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	float: left;
+}
+
+.fullRate{
+	width: 100vw;
+
+	background-color: white;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+	float: left;
+}
+
+.fullRate p{
+	font-size: 54px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-family: 'Alexandria', sans-serif;
+}
+
+.rate p{
+	font-size: 54px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-family: 'Alexandria', sans-serif;
+}
+
+.rating{
+	width: 680px;
+	margin-top: 20px;
+	float: left;
+	height: 80px;
+}
+
+#myRate{
+	font-size: 54px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-family: 'Alexandria', sans-serif;
+	float: left;
+	
+}
+
+.fullRate .rating{
+	float: none;
+}
+
+.heart{
+	float: left;
+	height: 80px;
+	margin-right: 40px;
+}
+
+.confirmButton{
+	height: 120px;
+	width: 300px;
+	border-radius: 36px;
+	font-size: 54px;
+	margin-top: 50px;
+	float: left;
+	background-color: #EE4139;
+}
+
+.confirmButton p{
+	font-family: 'Alexandria', sans-serif;
+	color: white;
+	font-size: 46px;
+	margin-top: 32px;
+	text-align: center;
+}
+

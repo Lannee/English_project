@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>Carevis</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body style='overflow-x:hidden;'>
+	<div class="content">
+	<div id="headBack"></div>
+	<div class="head">
+		<img src="logo.png" class="logo">
+		<img id="menuButton" src="./menu.png">
+	</div>
+
+	<script>
+		const bigMenu = document.getElementById("bigMenu");
+		const headBack = document.getElementById("headBack");
+		const menuButton = document.getElementById("menuButton");
+		let isVisible = false;
+
+		document.getElementById("menuButton").onclick = function() {
+  	if(isVisible){
+  		headBack.style.height = "70px";
+  		bigMenu.style.opacity = "0";
+  		headBack.style.top = "40px";
+  		headBack.style.margin-left = "40px";
+  		headBack.style.border-radius = "50px";
+  		bigMenu.style.visibility = "hidden"
+  		menuButton.src='./menu.png';
+  	}
+  	if(!isVisible){
+  		headBack.style.height = "110vh";
+  		headBack.style.top = "0px";
+  		headBack.style.margin-left = "0px";
+  		headBack.style.border-radius = "0px";
+  		bigMenu.style.opacity = "1";
+  		bigMenu.style.visibility = "visible"
+  		menuButton.src='./close.png';
+  	}
+  	isVisible = !isVisible
+
+		}
+  </script>
+
+	<img src="banner.jpg" class="mainBanner">
+
+	<div class="progress">
+		<p>Your current progress:</p>
+		<div class="progressBack"></div>
+		<div class="progressbar"></div>
+	</div>
+	<div class="tasks">
+		<p id="date">02 december</p>
+		<h1>Tasks for today:</h1>
+		<div class="task">
+			<div class="check"></div>
+			<p>Arrange an evening of watching a movie together</p>
+		</div>
+		<div class="task">
+			<div class="check"></div>
+			<p>Cook dinner together</p>
+		</div>
+		<div class="task">
+			<div class="check"></div>
+			<p>Arrange a shopping day for girls</p>
+		</div>
+	</div>
+	<div class="rate">
+		<p>Rate your partner</p>
+		<div class="rating">
+			<img src="heartnocolor.png" class="heart">
+			<img src="heartnocolor.png" class="heart">
+			<img src="heartnocolor.png" class="heart">
+			<img src="heartnocolor.png" class="heart">
+			<img src="heartnocolor.png" class="heart">
+		</div>
+		<div class="confirmButton"><p>Confirm</p></div>
+	</div>
+	</div>
+</body>
+</html>
