@@ -1,0 +1,106 @@
+<html>
+<head>
+	<title>Carevis</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body style='overflow-x:hidden;'>
+	<div class="content">
+	<div id="headBack"></div>
+	<div class="head">
+		<a href="index.html"><img src="logo.png" class="logo"></a>
+		<img id="menuButton" src="./menu.png">
+	</div>
+
+	<img src="banner.jpg" class="mainBanner">
+
+	<a href="progress.html"><div class="progress">
+		<p>Your current progress:</p>
+		<div class="progressBack"></div>
+		<div class="progressbar"></div>
+	</div>
+	</a>
+	<div class="tasks">
+		<p id="date">02 december</p>
+		<h1>Tasks for today:</h1>
+		<div class="task">
+			<div class="check"></div>
+			<p>Arrange an evening of watching a movie together</p>
+		</div>
+		<div class="task">
+			<div class="check"></div>
+			<p>Cook dinner together</p>
+		</div>
+		<div class="task">
+			<div class="check"></div>
+			<p>Arrange a shopping day for girls</p>
+		</div>
+	</div>
+	<div class="rate">
+		<p>Rate your partner</p>
+		<div class="rating">
+			<img src="heartnocolor.png" class="heart" id="h1" onclick="change1()">
+			<img src="heartnocolor.png" class="heart" id="h2" onclick="change2()">
+			<img src="heartnocolor.png" class="heart" id="h3" onclick="change3()">
+			<img src="heartnocolor.png" class="heart" id="h4" onclick="change4()">
+			<img src="heartnocolor.png" class="heart" id="h5" onclick="change5()">
+		</div>
+		<script>
+		const h1 = document.getElementById("h1");
+		const h2 = document.getElementById("h2");
+		const h3 = document.getElementById("h3");
+		const h4 = document.getElementById("h4");
+		const h5 = document.getElementById("h5");
+		const confirm = document.getElementById("h5");
+
+		function change1() {
+			document.getElementById("h1").src="heart.png";
+			h2.src="heartnocolor.png";
+			h3.src="heartnocolor.png";
+			h4.src="heartnocolor.png";
+			h5.src="heartnocolor.png";
+		}
+		function change2() {
+			h1.src="heart.png";
+			h2.src="heart.png";
+			h3.src="heartnocolor.png";
+			h4.src="heartnocolor.png";
+			h5.src="heartnocolor.png";
+		}
+		function change3() {
+			h1.src="heart.png";
+			h2.src="heart.png";
+			h3.src="heart.png";
+			h4.src="heartnocolor.png";
+			h5.src="heartnocolor.png";
+		}
+		function change4() {
+			h1.src="heart.png";
+			h2.src="heart.png";
+			h3.src="heart.png";
+			h4.src="heart.png";
+			h5.src="heartnocolor.png";
+		}
+		function change5() {
+			h1.src="heart.png";
+			h2.src="heart.png";
+			h3.src="heart.png";
+			h4.src="heart.png";
+			h5.src="heart.png";
+		}
+		function confirm() {
+			document.getElementById("h1").src="heartnocolor.png";
+			h2.src="heartnocolor.png";
+			h3.src="heartnocolor.png";
+			h4.src="heartnocolor.png";
+			h5.src="heartnocolor.png";
+		}
+
+  </script>
+		<div id="confirmButton" onclick="confirm()"><p>Confirm</p></div>
+	</div>
+	</div>
+</body>
+</html>
