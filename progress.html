@@ -14,6 +14,46 @@
 		<img id="menuButton" src="./menu.png">
 	</div>
 
+	<div id="bigMenu">
+		<a href="index.html"><div class="bigMenuButton"><p>Home</p></div></a>
+		<a href="progress.html"><div class="bigMenuButton"><<p>All progress</p></div></a>
+		<a href="index.html"><div class="bigMenuButton"><p>FAQ</p></div></a>
+	</div>
+
+
+
+<script>
+		const bigMenu = document.getElementById("bigMenu");
+		const headBack = document.getElementById("headBack");
+		const menuButton = document.getElementById("menuButton");
+		let isVisible = false;
+
+		document.getElementById("menuButton").onclick = function() {
+  	if(isVisible == true){
+  		headBack.style.height = "180px";
+  		headBack.style.width = "calc(100vw - 80px)";
+  		headBack.style.top = "40px";
+  		headBack.style.marginLeft = "40px";
+  		headBack.style.borderRadius = "50px";
+  		bigMenu.style.opacity = "0";
+  		bigMenu.style.visibility = "hidden"
+  		menuButton.src='menu.png';
+  	}
+  	if(isVisible == false){
+  		headBack.style.height = "110vh";
+  		headBack.style.width = "100vw";
+  		headBack.style.top = "0px";
+  		headBack.style.marginLeft = "0px";
+  		headBack.style.borderRadius = "0px";
+  		bigMenu.style.opacity = "1";
+  		bigMenu.style.visibility = "visible"
+  		menuButton.src='close.png';
+  	}
+  	isVisible = !isVisible
+
+		}
+  </script>
+
 	<div class="fullProgress">
 		<p>All your progress:</p>
 		<div class="fullHeart"></div>
