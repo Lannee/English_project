@@ -51,6 +51,12 @@ body{
   font-size: 52px;
   float: left;
 }
+.bigMenuButton img{
+	margin-left: 50px;
+	margin-top: 56px;
+	height: 70px;
+  	float: left;
+}
 .bigMenuButton{
 	width: calc(100vw - 80px);
     height: 180px;
@@ -73,6 +79,7 @@ body{
 	background-color: #eeeeee;
 	padding-bottom: 40px;
 	float: left;
+	min-height: 100vh;
 }
 
 .logo{
@@ -135,15 +142,22 @@ body{
 }
 
 .progressbar{
-	height: 50px;
+	height: 70px;
 	width: calc((100% - 40px) / 2);
 	background-color: #EE4139;
 	border-radius: 25px 0px 0px 25px;
-	margin-top: -50px;
+	margin-top: -70px;
+}
+
+.smallInfo{
+	font-size: 40px !important;
+	margin-top: -20px !important;
+	margin-bottom: 30px !important;
+	opacity: 0.6;
 }
 
 .progressBack{
-	height: 50px;
+	height: 70px;
 	width: calc(100% - 40px);
 	background-color: #E98985;
 	border-radius: 25px;
@@ -225,6 +239,17 @@ body{
 	margin-bottom: 40px;
 	float: left;
 }
+.commentRate{
+	width: calc(100vw - 120px);
+	margin-left: 40px;
+	margin-top: 260px;
+	border-radius: 50px;
+	background-color: white;
+	padding-top: 40px;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	float: left;
+}
 
 .fullRate{
 	width: calc(100vw - 40px);
@@ -243,7 +268,7 @@ body{
 	font-family: 'Alexandria', sans-serif;
 }
 
-.rate p{
+.rate p, .commentRate p{
 	font-size: 54px;
 	margin-top: 0px;
 	margin-bottom: 30px;
@@ -257,6 +282,24 @@ body{
 	height: 80px;
 }
 
+.commenting{
+	height: 150px;
+	border-radius: 46px;
+	background-color: #eeeeee;
+	width: calc(100% - 40px);
+}
+
+.commenting input{
+	height: 100%;
+	width: 100%;
+	background: none;
+	border:  none;
+	outline: none;
+	font-size: 42px;
+	padding-left: 40px;
+}
+
+
 #myRate{
 	font-size: 54px;
 	margin-top: 26px !important;
@@ -264,8 +307,25 @@ body{
 	float: left;
 }
 
+#successMessage{
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 36px;
+	float: left;
+	margin-left: 30px;
+	margin-top: 86px !important;
+}
+#successMessageC{
+	opacity: 0;
+	transition: 0.5s;
+	font-size: 36px;
+	float: left;
+	margin-left: 30px;
+	margin-top: 86px !important;
+}
 
 .heart{
+	transition: 0.2s;
 	float: left;
 	height: 80px;
 	margin-right: 40px;
@@ -289,6 +349,29 @@ body{
 	text-align: center;
 }
 
+#confirmButtonC{
+	height: 120px;
+	width: 300px;
+	border-radius: 36px;
+	font-size: 54px;
+	margin-top: 50px;
+	float: left;
+	background-color: #EE4139;
+}
+
+#confirmButtonC p{
+	font-family: 'Alexandria', sans-serif;
+	color: white;
+	font-size: 46px;
+	margin-top: 32px;
+	text-align: center;
+}
+
+#percentage{
+	font-size: 80px !important;
+	margin-bottom: 0px !important;
+}
+
 a{
 	color: black;
 	text-decoration: none;
@@ -299,8 +382,8 @@ a{
 }
 
 @keyframes star {
-from {scale: 1;}
-50% {scale: 1.2;}
-to {scale: 1;}
+from {transform: scale(1);}
+50% {transform: scale(1.4);}
+to {transform: scale(1);}
 }
 

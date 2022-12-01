@@ -18,7 +18,7 @@
 		<a href="index.html"><div class="bigMenuButton"><img src="home.png"><p>Home</p></div></a>
 		<a href="progress.html"><div class="bigMenuButton"><img src="progress.png"><p>All progress</p></div></a>
 		<a href="comment.html"><div class="bigMenuButton"><img src="write.png"><p>Add comment</p></div></a>
-		<a href="progress.html"><div class="bigMenuButton"><img src="add.png"><p>Add new task</p></div></a>
+		<a href="index.html"><div class="bigMenuButton"><img src="add.png"><p>Add new task</p></div></a>
 		<a href="index.html"><div class="bigMenuButton"><img src="faq.png"><p>FAQ</p></div></a>
 	</div>
 
@@ -56,35 +56,7 @@
 		}
   </script>
 
-
-
-	<img src="banner.jpg" class="mainBanner">
-
-	<a href="progress.html"><div class="progress">
-		<p>Your current progress: 52%</p>
-		<p class="smallInfo">Click for more info</p>
-		<div class="progressBack"></div>
-		<div class="progressbar"></div>
-	</div>
-
-	</a>
-	<div class="tasks">
-		<p id="date">02 december</p>
-		<h1>Tasks for today:</h1>
-		<div class="task">
-			<div class="check"></div>
-			<p>Arrange an evening of watching a movie together</p>
-		</div>
-		<div class="task">
-			<div class="check"></div>
-			<p>Cook dinner together</p>
-		</div>
-		<div class="task">
-			<div class="check"></div>
-			<p>Arrange a shopping day for girls</p>
-		</div>
-	</div>
-	<div class="rate">
+	<div class="commentRate">
 		<p>Rate your partner</p>
 		<div class="rating">
 			<img src="heartnocolor.png" class="heart" id="h1" onclick="change1()">
@@ -96,6 +68,15 @@
 		<div id="confirmButton" onclick="confirmation()"><p>Confirm</p></div>
 		<p id="successMessage">Rating sent</p>
 	</div>
+	<div class="rate">
+		<p>Leave a comment</p>
+		<p class="smallInfo">Describe your impressions</p>
+		<div class="commenting">
+			<input type="text" placeholder="Write something...">
+		</div>
+		<div id="confirmButtonC" onclick="confirmationC()"><p>Confirm</p></div>
+		<p id="successMessageC">Comment sent</p>
+	</div>
 	</div>
 
 	<script>
@@ -105,7 +86,9 @@
 		const h4 = document.getElementById("h4");
 		const h5 = document.getElementById("h5");
 		const confirm = document.getElementById("confirmButton");
+		const confirmC = document.getElementById("confirmButtonC");
 		const suc = document.getElementById("successMessage");
+		const sucC = document.getElementById("successMessageC");
 
 
 		function change1() {
@@ -150,6 +133,9 @@
 			h4.src="heartnocolor.png";
 			h5.src="heartnocolor.png";
 			suc.style.opacity = "1";
+		}
+		function confirmationC() {
+			sucC.style.opacity = "1";
 		}
 
   </script>
